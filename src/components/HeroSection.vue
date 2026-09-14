@@ -311,13 +311,17 @@ onBeforeUnmount(() => {
       <div class="hero__copy">
         <div class="hero__badges">
           <span class="badge">
-            <span class="icon" style="font-size: 0.875rem" aria-hidden="true">crowdsource</span>
-            Open Source
+            <span class="icon" style="font-size: 0.875rem" aria-hidden="true">music_note</span>
+            Streaming
           </span>
-          <span class="badge"><span class="icon" style="font-size: 0.875rem"
-              aria-hidden="true">license</span>GPL-3.0</span>
-          <span class="badge"><span class="icon" style="font-size: 0.875rem"
-              aria-hidden="true">android</span>Android</span>
+          <span class="badge">
+            <span class="icon" style="font-size: 0.875rem" aria-hidden="true">verified_user</span>
+            Sin Anuncios
+          </span>
+          <span class="badge">
+            <span class="icon" style="font-size: 0.875rem" aria-hidden="true">android</span>
+            Android
+          </span>
         </div>
 
         <h1 class="hero__headline">
@@ -334,16 +338,14 @@ onBeforeUnmount(() => {
         </p>
 
         <div class="hero__actions">
-          <a href="https://github.com/MetrolistGroup/Metrolist/releases" class="btn btn-filled btn-lg" target="_blank"
-            rel="noopener noreferrer">
-            <span class="icon" aria-hidden="true">download</span>
-            Download APK
-          </a>
-          <a href="https://github.com/MetrolistGroup/Metrolist" class="btn btn-outlined btn-lg" target="_blank"
-            rel="noopener noreferrer">
-            <span class="icon" aria-hidden="true">code</span>
-            View on GitHub
-          </a>
+          <button class="btn btn-filled btn-lg hero__btn-soon" type="button" disabled>
+            <span class="icon" aria-hidden="true">android</span>
+            Próximamente
+          </button>
+          <RouterLink to="/faq" class="btn btn-outlined btn-lg">
+            <span class="icon" aria-hidden="true">help</span>
+            Más información
+          </RouterLink>
         </div>
       </div>
 
@@ -475,6 +477,13 @@ onBeforeUnmount(() => {
   flex-wrap: wrap;
   gap: 12px;
   align-items: center;
+}
+
+.hero__btn-soon {
+  cursor: default;
+  opacity: 0.95;
+  box-shadow: none;
+  pointer-events: none;
 }
 
 /* -- Visual / Mockup -- */

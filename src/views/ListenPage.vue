@@ -94,17 +94,16 @@ async function copyCode() {
 
         <article class="listen__card listen__card--download" data-step="2">
           <div class="listen__card-icon-wrap listen__card-icon-wrap--tertiary">
-            <span class="icon" aria-hidden="true">download</span>
+            <span class="icon" aria-hidden="true">android</span>
           </div>
-          <h2 class="listen__card-title">No app yet?</h2>
+          <h2 class="listen__card-title">¿Aún no tienes la app?</h2>
           <p class="listen__card-body">
-            Install Rediplays from GitHub, then come back and open the link above.
+            Rediplays estará disponible muy pronto para dispositivos Android en Google Play Store.
           </p>
-          <a href="https://github.com/MetrolistGroup/Metrolist/releases" class="btn btn-filled btn-lg" target="_blank"
-            rel="noopener noreferrer">
-            <span class="icon" aria-hidden="true">download</span>
-            Download Rediplays
-          </a>
+          <div class="btn btn-filled btn-lg" style="cursor: default; opacity: 0.95; pointer-events: none;">
+            <span class="icon" aria-hidden="true">schedule</span>
+            Próximamente
+          </div>
         </article>
       </div>
 

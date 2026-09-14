@@ -4,24 +4,21 @@
       <div class="download__card">
 
         <div class="download__copy">
-          <h2 class="download__title">Ready to listen?</h2>
+          <h2 class="download__title">¿Listo para escuchar?</h2>
           <p class="download__sub">
-            Free, open, and always up to date on GitHub.
-            Install takes under a minute.
+            Disfruta de streaming fluido, sin anuncios molestos y con la máxima calidad en tu dispositivo Android.
           </p>
         </div>
 
         <div class="download__actions">
-          <a href="https://github.com/MetrolistGroup/Metrolist/releases" class="btn btn-filled btn-lg" target="_blank"
-            rel="noopener noreferrer">
-            <span class="icon" aria-hidden="true">download</span>
-            Download APK
-          </a>
-          <a href="https://github.com/MetrolistGroup/Metrolist/releases" class="download__changelog" target="_blank"
-            rel="noopener noreferrer">
-            Latest release on GitHub
+          <div class="btn btn-filled btn-lg download__btn-soon">
+            <span class="icon" aria-hidden="true">android</span>
+            Próximamente
+          </div>
+          <RouterLink to="/faq" class="download__faq-link">
+            Preguntas Frecuentes
             <span class="icon" style="font-size: 1rem" aria-hidden="true">arrow_forward</span>
-          </a>
+          </RouterLink>
         </div>
 
       </div>
@@ -57,7 +54,7 @@
 .download__sub {
   font-size: 1rem;
   color: color-mix(in srgb, var(--md-on-primary-container) 72%, transparent);
-  max-width: 38ch;
+  max-width: 44ch;
   line-height: 1.65;
 }
 
@@ -69,31 +66,30 @@
   flex-shrink: 0;
 }
 
-/* Override filled button to sit on tonal background correctly */
-.download__card .btn-filled {
+.download__btn-soon {
   background: var(--md-primary);
   color: var(--md-on-primary);
   box-shadow: var(--el-1);
+  cursor: default;
+  opacity: 0.95;
+  pointer-events: none;
 }
 
-.download__card .btn-filled:hover {
-  box-shadow: var(--el-3);
-}
-
-.download__changelog {
+.download__faq-link {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--md-on-primary-container);
   text-decoration: none;
-  opacity: 0.72;
+  opacity: 0.85;
   transition: opacity var(--t-fast);
 }
 
-.download__changelog:hover {
+.download__faq-link:hover {
   opacity: 1;
+  text-decoration: underline;
 }
 
 @media (max-width: 700px) {
