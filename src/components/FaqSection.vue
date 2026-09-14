@@ -1,15 +1,39 @@
 <script setup lang="ts">
-import { FAQ_ITEMS } from '../content/faq'
+import { ref, computed } from 'vue'
+import { FAQ_DATA } from '../content/faq'
 
-const topItems = FAQ_ITEMS.slice(0, 5)
+const currentLang = ref<'es' | 'en'>('es')
+const topItems = computed(() => (FAQ_DATA[currentLang.value] || FAQ_DATA.es).slice(0, 5))
 </script>
 
 <template>
   <section id="faq" class="faq">
     <div class="container">
       <header class="faq__header">
-        <h2 class="faq__title">Quick answers.</h2>
-        <p class="faq__sub">Got questions? We've got you covered.</p>
+        <h2 class="faq__title">
+          {{ currentLang === 'es' ? 'Preguntas Frecuentes.' : 'Quick answers.' }}
+        </h2>
+        <p class="faq__sub">
+          {{ currentLang === 'es' ? '¿Tienes dudas? Te ayudamos a resolverlas.' : "Got questions? We've got you covered." }}
+        </p>
+
+        <!-- Inline mini toggle -->
+        <div class="faq__lang-toggle">
+          <div class="lang-switch" role="group" aria-label="Language selector">
+            <button
+              :class="['lang-btn', { active: currentLang === 'es' }]"
+              @click="currentLang = 'es'"
+            >
+              Español
+            </button>
+            <button
+              :class="['lang-btn', { active: currentLang === 'en' }]"
+              @click="currentLang = 'en'"
+            >
+              English
+            </button>
+          </div>
+        </div>
       </header>
 
       <div class="faq__card" role="region" aria-label="Frequently asked questions">
@@ -25,7 +49,7 @@ const topItems = FAQ_ITEMS.slice(0, 5)
 
         <div class="faq__cta">
           <RouterLink to="/faq" class="btn btn-tonal btn-lg">
-            Got more questions? View full FAQ
+            {{ currentLang === 'es' ? '¿Más preguntas? Ver todo el FAQ' : 'Got more questions? View full FAQ' }}
             <span class="icon" aria-hidden="true" style="font-size: 1.125rem">arrow_forward</span>
           </RouterLink>
         </div>
@@ -57,7 +81,40 @@ const topItems = FAQ_ITEMS.slice(0, 5)
   font-size: 1.0625rem;
   color: var(--md-on-surface-variant);
   max-width: 60ch;
-  margin: 0 auto;
+  margin: 0 auto 16px;
+}
+
+.faq__lang-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+/* Language selector */
+.lang-switch {
+  display: inline-flex;
+  background: var(--md-sc-low);
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--r-full);
+  padding: 3px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--md-on-surface-variant);
+  font-family: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: var(--r-full);
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.lang-btn.active {
+  background: var(--md-primary);
+  color: var(--md-on-primary);
 }
 
 .faq__card {
