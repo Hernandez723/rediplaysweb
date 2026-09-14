@@ -7,10 +7,10 @@ export type FaqItem = {
 export const FAQ_DATA = {
   es: [
     {
-      question: '1. ¿Es Rediplays una app de código abierto?',
+      question: '1. ¿Cómo se distribuye la app?',
       answer:
-        'Sí, absolutamente. Rediplays es un proyecto de código abierto bajo licencia GPL-3.0. El código fuente es público, transparente y auditable por cualquier usuario o desarrollador en GitHub.',
-      category: 'Código Abierto'
+        'Rediplays se distribuye exclusivamente a través de Google Play Store para garantizar la seguridad, integridad y actualizaciones automáticas de todos los usuarios.',
+      category: 'Distribución'
     },
     {
       question: '2. ¿Cómo funciona el reconocimiento musical y qué pasa con el audio?',
@@ -37,9 +37,9 @@ export const FAQ_DATA = {
       category: 'Privacidad'
     },
     {
-      question: '6. ¿Cómo se actualiza la aplicación?',
+      question: '6. ¿Cómo se actualiza la app?',
       answer:
-        '• Usuarios de Google Play Store: La aplicación se actualizará de forma automática y segura a través de Google Play Store.\n• Usuarios de versiones independientes / GitHub: Puedes obtener las versiones más recientes directamente desde la sección de Releases en nuestro repositorio oficial de GitHub.',
+        'Las actualizaciones se descargan e instalan automáticamente de forma segura a través de Google Play Store.',
       category: 'Actualizaciones'
     },
     {
@@ -49,18 +49,18 @@ export const FAQ_DATA = {
       category: 'Plataformas'
     },
     {
-      question: '8. ¿Cómo puedo reportar un error o sugerir una función?',
+      question: '8. ¿Cómo puedo obtener soporte o reportar un problema?',
       answer:
-        'Puedes abrir un reporte de error (Issue) o proponer una idea directamente en la pestaña de Issues de nuestro repositorio oficial de GitHub: github.com/Hernandez723/rediplaysapp.',
+        'Puedes ponerte en contacto directamente con nuestro equipo de soporte a través de nuestro correo electrónico oficial de contacto: contacto@rediplays.com.',
       category: 'Soporte'
     }
   ],
   en: [
     {
-      question: '1. Is Rediplays an open-source application?',
+      question: '1. How is the application distributed?',
       answer:
-        'Yes, absolutely. Rediplays is an open-source project licensed under GPL-3.0. The source code is public, transparent, and auditable by anyone on GitHub.',
-      category: 'Open Source'
+        'Rediplays is distributed exclusively through the Google Play Store to guarantee the security, integrity, and automatic updates for all users.',
+      category: 'Distribution'
     },
     {
       question: '2. How does music recognition work and what happens with audio?',
@@ -87,9 +87,9 @@ export const FAQ_DATA = {
       category: 'Privacy'
     },
     {
-      question: '6. How does the app update?',
+      question: '6. How is the app updated?',
       answer:
-        '• Google Play Store users: The app will update automatically and securely through the Google Play Store.\n• Independent / GitHub users: You can grab the latest releases directly from the Releases tab on our official GitHub repository.',
+        'Updates are downloaded and installed automatically and securely through the Google Play Store.',
       category: 'Updates'
     },
     {
@@ -99,9 +99,9 @@ export const FAQ_DATA = {
       category: 'Platforms'
     },
     {
-      question: '8. How can I report a bug or suggest a new feature?',
+      question: '8. How can I get support or report an issue?',
       answer:
-        'You can open an issue or submit suggestions directly on the Issues tab of our official GitHub repository: github.com/Hernandez723/rediplaysapp.',
+        'You can contact our support team directly via our official email address: contacto@rediplays.com.',
       category: 'Support'
     }
   ]

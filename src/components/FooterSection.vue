@@ -2,23 +2,24 @@
   <footer class="footer">
     <div class="container footer__inner">
 
-      <!-- Brand blurb -->
+      <!-- Brand & Description -->
       <div class="footer__brand">
-        <a href="/" class="footer__logo-link" aria-label="Rediplays home">
-          <img src="/logo.svg" alt="" width="28" height="28" loading="lazy" />
+        <RouterLink to="/" class="footer__logo-link" aria-label="Rediplays inicio">
+          <img src="/logo.svg" alt="" width="30" height="30" loading="lazy" />
           <span class="footer__wordmark">Rediplays</span>
-        </a>
+        </RouterLink>
         <p class="footer__tagline">
-          Open-source YouTube Music client for Android.
+          Reproductor de música en streaming para Android.
         </p>
       </div>
 
       <!-- Links -->
-      <nav class="footer__links" aria-label="Footer links">
-        <RouterLink to="/privacy" class="footer__link">Privacy Policy</RouterLink>
-        <RouterLink to="/faq" class="footer__link">FAQ</RouterLink>
-        <a v-for="link in links" :key="link.label" :href="link.href" class="footer__link" target="_blank"
-          rel="noopener noreferrer">{{ link.label }}</a>
+      <nav class="footer__nav" aria-label="Enlaces del pie de página">
+        <RouterLink to="/privacy" class="footer__link">Política de Privacidad</RouterLink>
+        <span class="footer__sep" aria-hidden="true">|</span>
+        <RouterLink to="/faq" class="footer__link">Preguntas Frecuentes</RouterLink>
+        <span class="footer__sep" aria-hidden="true">|</span>
+        <a href="mailto:contacto@rediplays.com" class="footer__link">Soporte</a>
       </nav>
 
     </div>
@@ -27,58 +28,51 @@
       <hr class="footer__divider" />
     </div>
 
-    <!-- Bottom: disclaimer + credits -->
+    <!-- Bottom: Copyright & Legal Disclaimer -->
     <div class="container footer__bottom">
       <p class="footer__disclaimer">
-        Rediplays is an open-source project (GPL-3.0), strictly for educational purposes.
-        Not affiliated with, authorized, or endorsed by Google LLC.
-        "YouTube" and "YouTube Music" are registered trademarks of Google LLC.
-      </p>
-      <p class="footer__credits">
-        Rediplays made by <a href="https://github.com/mostafaalagamy" target="_blank" rel="noopener noreferrer">Mo
-          Agamy</a>, Site made by <a href="https://nyx.meowery.eu" target="_blank" rel="noopener noreferrer">Nyx</a>
+        © 2026 Rediplays. Todos los derechos reservados. Aplicación independiente no afiliada, autorizada ni respaldada por Google LLC.
       </p>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-const links = [
-  { label: 'GitHub', href: 'https://github.com/MetrolistGroup/Metrolist' },
-  { label: 'Releases', href: 'https://github.com/MetrolistGroup/Metrolist/releases' },
-  { label: 'Issues', href: 'https://github.com/MetrolistGroup/Metrolist/issues' },
-  { label: 'Weblate', href: 'https://hosted.weblate.org/projects/Metrolist/' },
-]
 </script>
 
 <style scoped>
 .footer {
   background: var(--md-sc-low);
   border-top: 1px solid var(--md-outline-variant);
-  padding: 56px 0 40px;
+  padding: 48px 0 36px;
 }
 
 .footer__inner {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 32px;
-  margin-bottom: 32px;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 /* Brand */
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .footer__logo-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-decoration: none;
-  margin-bottom: 8px;
 }
 
 .footer__logo-link img {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   border-radius: var(--r-xs);
 }
@@ -86,73 +80,67 @@ const links = [
 .footer__wordmark {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--md-on-surface);
   letter-spacing: -0.025em;
 }
 
 .footer__tagline {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: var(--md-on-surface-variant);
-  max-width: 30ch;
 }
 
-/* Links */
-.footer__links {
+/* Nav links */
+.footer__nav {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 4px;
-  align-items: flex-start;
-  padding-top: 2px;
+  gap: 12px;
 }
 
 .footer__link {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: var(--r-full);
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--md-on-surface-variant);
+  color: var(--md-on-surface);
   text-decoration: none;
-  transition: background var(--t-fast), color var(--t-fast);
+  transition: color var(--t-fast);
 }
 
 .footer__link:hover {
-  background: color-mix(in srgb, var(--md-on-surface) 8%, transparent);
-  color: var(--md-on-surface);
+  color: var(--md-primary);
+  text-decoration: underline;
+}
+
+.footer__sep {
+  color: var(--md-outline-variant);
+  user-select: none;
 }
 
 /* Divider */
 .footer__divider {
   border: none;
   border-top: 1px solid var(--md-outline-variant);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 /* Bottom text */
 .footer__bottom {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.footer__disclaimer,
-.footer__credits {
-  font-size: 0.8125rem;
-  color: var(--md-on-surface-variant);
-  line-height: 1.6;
+  gap: 6px;
 }
 
 .footer__disclaimer {
-  opacity: 0.75;
+  font-size: 0.8125rem;
+  color: var(--md-on-surface-variant);
+  line-height: 1.6;
+  opacity: 0.85;
 }
 
-.footer__credits a {
-  color: var(--md-primary);
-  text-decoration: none;
-}
-
-.footer__credits a:hover {
-  text-decoration: underline;
+@media (max-width: 640px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 </style>

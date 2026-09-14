@@ -29,15 +29,12 @@ onUnmounted(() => {
 
       <!-- Desktop navigation -->
       <nav class="navbar__links" aria-label="Main navigation">
-        <RouterLink :to="{ path: '/', hash: '#highlights' }" class="nav-link">Features</RouterLink>
+        <RouterLink :to="{ path: '/', hash: '#highlights' }" class="nav-link">Características</RouterLink>
         <RouterLink to="/faq" class="nav-link">FAQ</RouterLink>
-        <RouterLink to="/privacy" class="nav-link">Privacy</RouterLink>
-        <a href="https://github.com/MetrolistGroup/Metrolist/releases" class="nav-link" target="_blank"
-          rel="noopener noreferrer">Download</a>
-        <a href="https://github.com/MetrolistGroup/Metrolist" class="btn btn-tonal btn-sm" target="_blank"
-          rel="noopener noreferrer">
-          <span class="icon" aria-hidden="true">code</span>
-          GitHub
+        <RouterLink to="/privacy" class="nav-link">Privacidad</RouterLink>
+        <a href="mailto:contacto@rediplays.com" class="btn btn-tonal btn-sm">
+          <span class="icon" aria-hidden="true">mail</span>
+          Soporte
         </a>
       </nav>
 
@@ -52,14 +49,13 @@ onUnmounted(() => {
     <Transition name="drawer">
       <div v-if="isMenuOpen" class="navbar__drawer" role="navigation" aria-label="Mobile navigation">
         <RouterLink :to="{ path: '/', hash: '#highlights' }" class="drawer-link" @click="isMenuOpen = false">
-          Features
+          Características
         </RouterLink>
         <RouterLink to="/faq" class="drawer-link" @click="isMenuOpen = false">FAQ</RouterLink>
-        <RouterLink to="/privacy" class="drawer-link" @click="isMenuOpen = false">Privacy Policy</RouterLink>
-        <a href="https://github.com/MetrolistGroup/Metrolist/releases" class="drawer-link" target="_blank"
-          rel="noopener noreferrer" @click="isMenuOpen = false">Download</a>
-        <a href="https://github.com/MetrolistGroup/Metrolist" class="drawer-link" target="_blank"
-          rel="noopener noreferrer" @click="isMenuOpen = false">GitHub</a>
+        <RouterLink to="/privacy" class="drawer-link" @click="isMenuOpen = false">Política de Privacidad</RouterLink>
+        <a href="mailto:contacto@rediplays.com" class="drawer-link" @click="isMenuOpen = false">
+          Soporte
+        </a>
       </div>
     </Transition>
   </header>

@@ -199,12 +199,12 @@ const lastUpdated = {
             Si tienes dudas o consultas sobre esta Política de Privacidad, puedes contactarnos a través de:
           </p>
           <div class="contact-card">
-            <span class="icon">code</span>
+            <span class="icon">mail</span>
             <div>
-              <strong>Repositorio Oficial:</strong>
+              <strong>Correo Oficial de Soporte:</strong>
               <p>
-                <a href="https://github.com/Hernandez723/rediplaysapp" target="_blank" rel="noopener noreferrer">
-                  GitHub - Rediplays Project (Hernandez723/rediplaysapp)
+                <a href="mailto:contacto@rediplays.com">
+                  contacto@rediplays.com
                 </a>
               </p>
             </div>
@@ -330,12 +330,12 @@ const lastUpdated = {
             If you have questions or inquiries regarding this Privacy Policy, feel free to contact us via:
           </p>
           <div class="contact-card">
-            <span class="icon">code</span>
+            <span class="icon">mail</span>
             <div>
-              <strong>Official Repository:</strong>
+              <strong>Official Support Email:</strong>
               <p>
-                <a href="https://github.com/Hernandez723/rediplaysapp" target="_blank" rel="noopener noreferrer">
-                  GitHub - Rediplays Project (Hernandez723/rediplaysapp)
+                <a href="mailto:contacto@rediplays.com">
+                  contacto@rediplays.com
                 </a>
               </p>
             </div>

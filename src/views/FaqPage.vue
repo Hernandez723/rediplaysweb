@@ -119,11 +119,11 @@ const filteredItems = computed(() => {
         <div class="support-card-content">
           <span class="icon support-icon">support</span>
           <div>
-            <h3>{{ currentLang === 'es' ? '¿Aún tienes dudas o encontraste un fallo?' : 'Still have questions or found an issue?' }}</h3>
+            <h3>{{ currentLang === 'es' ? '¿Aún tienes dudas o necesitas ayuda?' : 'Still have questions or need assistance?' }}</h3>
             <p>
               {{ currentLang === 'es'
-                ? 'Puedes consultar nuestra Política de Privacidad o abrir un reporte en nuestro repositorio oficial de GitHub.'
-                : 'You can review our Privacy Policy or submit an issue on our official GitHub repository.'
+                ? 'Puedes consultar nuestra Política de Privacidad o escribirnos directamente a nuestro correo oficial de soporte.'
+                : 'You can review our Privacy Policy or write directly to our official support email.'
               }}
             </p>
           </div>
@@ -133,9 +133,9 @@ const filteredItems = computed(() => {
             <span class="icon">shield</span>
             {{ currentLang === 'es' ? 'Política de Privacidad' : 'Privacy Policy' }}
           </RouterLink>
-          <a href="https://github.com/Hernandez723/rediplaysapp/issues" target="_blank" rel="noopener noreferrer" class="btn btn-outlined">
-            <span class="icon">code</span>
-            GitHub Issues
+          <a href="mailto:contacto@rediplays.com" class="btn btn-outlined">
+            <span class="icon">mail</span>
+            contacto@rediplays.com
           </a>
         </div>
       </section>
