@@ -24,12 +24,12 @@ const lastUpdated = {
           <span>{{ currentLang === 'es' ? 'Cumplimiento y Privacidad' : 'Compliance & Privacy' }}</span>
         </div>
         <h1 class="privacy-page__title">
-          {{ currentLang === 'es' ? 'Política de Privacidad' : 'Privacy Policy' }}
+          {{ currentLang === 'es' ? 'Cumplimiento y Política de Privacidad' : 'Compliance & Privacy Policy' }}
         </h1>
         <p class="privacy-page__subtitle">
           {{ currentLang === 'es'
-            ? 'En Rediplays valoramos y respetamos tu privacidad. Esta política detalla de manera transparente cómo tratamos la información al usar nuestra aplicación.'
-            : 'At Rediplays, we value and respect your privacy. This policy transparently details how data is handled when using our application.'
+            ? 'En Rediplays valoramos y respetamos tu privacidad. Esta política detalla de manera transparente cómo tratamos la información al usar nuestra aplicación y nuestros servicios.'
+            : 'At Rediplays, we value and respect your privacy. This policy transparently details how data is handled when using our application and services.'
           }}
         </p>
         <div class="privacy-page__meta">
@@ -60,8 +60,8 @@ const lastUpdated = {
           <div class="highlight-icon">
             <span class="icon">shield</span>
           </div>
-          <h3>{{ currentLang === 'es' ? 'Sin Rastreadores' : 'Zero Trackers' }}</h3>
-          <p>{{ currentLang === 'es' ? 'No incluimos herramientas de telemetría invasiva, analítica de terceros ni publicidad.' : 'No invasive telemetry, third-party analytics trackers, or ad SDKs included.' }}</p>
+          <h3>{{ currentLang === 'es' ? 'Privacidad y Control' : 'Privacy & Control' }}</h3>
+          <p>{{ currentLang === 'es' ? 'No recopilamos datos personales identificables (PII) ni vendemos tu información.' : 'No personally identifiable information (PII) is collected or sold.' }}</p>
         </div>
 
         <div class="highlight-card">
@@ -69,61 +69,57 @@ const lastUpdated = {
             <span class="icon">lock</span>
           </div>
           <h3>{{ currentLang === 'es' ? 'Almacenamiento Local' : 'Local Storage' }}</h3>
-          <p>{{ currentLang === 'es' ? 'Tus favoritos, historial y descargas permanecen en la memoria privada de tu teléfono.' : 'Your favorites, history, and downloads stay strictly within your device.' }}</p>
+          <p>{{ currentLang === 'es' ? 'Tus listas de reproducción, favoritos, historial y descargas permanecen en tu teléfono.' : 'Your playlists, favorites, history, and downloads stay strictly on your device.' }}</p>
         </div>
 
         <div class="highlight-card">
           <div class="highlight-icon">
             <span class="icon">security</span>
           </div>
-          <h3>{{ currentLang === 'es' ? 'Conexión Directa' : 'Direct Connection' }}</h3>
-          <p>{{ currentLang === 'es' ? 'Las solicitudes de reproducción se comunican directamente y cifradas (HTTPS) con YouTube/Google.' : 'Media streams connect directly and securely (HTTPS) to YouTube/Google servers.' }}</p>
+          <h3>{{ currentLang === 'es' ? 'Comunicaciones Seguras' : 'Secure Transmissions' }}</h3>
+          <p>{{ currentLang === 'es' ? 'Todas las solicitudes de red se realizan mediante conexiones cifradas (HTTPS/TLS).' : 'All network requests operate over encrypted (HTTPS/TLS) channels.' }}</p>
         </div>
       </section>
 
-      <!-- Policy Content -->
+      <!-- Spanish Content -->
       <article class="privacy-content" v-if="currentLang === 'es'">
         <section class="policy-section">
           <h2>1. Información General y Alcance</h2>
           <p>
-            <strong>Rediplays</strong> es una aplicación cliente multimedia de código abierto para dispositivos Android, diseñada para permitir la navegación, búsqueda y reproducción de contenido de audio y música.
+            <strong>Rediplays</strong> es una aplicación cliente multimedia para dispositivos Android, diseñada para permitir la navegación, búsqueda y reproducción de contenido de audio, podcasts y música de fuentes públicas en línea y archivos locales.
           </p>
           <p>
-            Esta Política de Privacidad aplica a todos los usuarios que instalen y utilicen la aplicación móvil Rediplays y a los visitantes de este sitio web. El uso de la aplicación implica la aceptación de los términos descritos en este documento.
+            Esta Política de Privacidad aplica a todos los usuarios que utilicen la aplicación móvil Rediplays y a los visitantes de este sitio web.
           </p>
         </section>
 
         <section class="policy-section">
           <h2>2. Información que NO Recopilamos</h2>
           <p>
-            Nuestro principio fundamental es la mínima retención de datos. Nosotros (los desarrolladores de Rediplays):
+            Nuestro principio fundamental es la mínima retención de datos:
           </p>
           <ul>
-            <li><strong>No recopilamos ni almacenamos datos personales identificables (PII):</strong> No requerimos nombre, número de teléfono, dirección postal ni identificación personal.</li>
-            <li><strong>No vendemos ni compartimos datos con terceros:</strong> No comerciamos con ninguna información del usuario bajo ninguna circunstancia.</li>
-            <li><strong>No poseemos servidores intermedios de registro:</strong> No enviamos tus búsquedas ni hábitos de escucha a servidores propietarios de telemetría.</li>
+            <li><strong>No recopilamos datos personales:</strong> No solicitamos nombre, correo electrónico, número de teléfono ni dirección.</li>
+            <li><strong>No rastreamos hábitos personales:</strong> No almacenamos historiales de escucha en servidores propios.</li>
+            <li><strong>No vendemos datos:</strong> Ninguna información es comercializada con terceros bajo ninguna circunstancia.</li>
           </ul>
         </section>
 
         <section class="policy-section">
           <h2>3. Datos Procesados Localmente en el Dispositivo</h2>
           <p>
-            Para brindar una experiencia óptima y fluida, Rediplays almacena ciertos datos exclusivamente de forma local en la memoria aislada (sandbox) de tu dispositivo:
+            Para brindar una experiencia óptima, Rediplays almacena ciertos datos exclusivamente de forma local en la memoria aislada (<em>sandbox</em>) de tu dispositivo:
           </p>
           <ul>
-            <li><strong>Caché de audio e imágenes:</strong> Portadas de álbumes y segmentos de audio para permitir reproducción rápida y sin cortes.</li>
-            <li><strong>Listas de reproducción locales y favoritos:</strong> Playlists personalizadas creadas por el usuario en la aplicación.</li>
-            <li><strong>Historial de búsqueda y reproducción local:</strong> Guardado únicamente para facilitar la navegación y reanudación de canciones.</li>
-            <li><strong>Preferencias y configuración:</strong> Ajustes de ecualizador, tema visual, calidad de transmisión seleccionada e idioma.</li>
-            <li><strong>Sesión de cuenta (Opcional):</strong> Si decides iniciar sesión en tu cuenta de YouTube Music, las cookies o tokens de autenticación se almacenan cifradas localmente en tu terminal y solo se envían directamente a los servidores oficiales de Google para sincronizar tus suscripciones y listas de reproducción.</li>
+            <li><strong>Caché de audio e imágenes:</strong> Portadas y fragmentos temporales para permitir reproducción rápida y sin cortes.</li>
+            <li><strong>Listas de reproducción y favoritos:</strong> Listas creadas por el usuario dentro de la app.</li>
+            <li><strong>Historial de búsqueda y reproducción local:</strong> Guardado únicamente en el dispositivo para facilitar la navegación.</li>
+            <li><strong>Preferencias y configuración:</strong> Ajustes visuales, ecualizador e idioma.</li>
           </ul>
         </section>
 
         <section class="policy-section">
-          <h2>4. Permisos de Android y su Justificación</h2>
-          <p>
-            En cumplimiento estricto con las políticas de desarrolladores de Google Play, a continuación se desglosan los permisos requeridos por la aplicación y su finalidad técnica:
-          </p>
+          <h2>4. Permisos de Android y su Justificación Técnica</h2>
           <div class="permissions-table-wrap">
             <table class="permissions-table">
               <thead>
@@ -135,23 +131,31 @@ const lastUpdated = {
               <tbody>
                 <tr>
                   <td><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
-                  <td>Requerido para conectarse a los servidores de streaming, descargar carátulas, buscar canciones y verificar si el dispositivo está conectado a Wi-Fi o datos móviles.</td>
+                  <td>Conexión con servidores de streaming para reproducir contenido, descargar carátulas y verificar el estado de red (Wi-Fi o datos móviles).</td>
                 </tr>
                 <tr>
                   <td><code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
-                  <td>Obligatorio en Android para mantener la reproducción continua de música en segundo plano y cuando la pantalla está apagada.</td>
+                  <td>Requerido por Android para mantener la reproducción continua de música en segundo plano y con la pantalla apagada.</td>
                 </tr>
                 <tr>
                   <td><code>POST_NOTIFICATIONS</code></td>
-                  <td>Permite mostrar los controles multimedia (pausa, siguiente, anterior, carátula) en la barra de notificaciones y pantalla de bloqueo (Android 13+).</td>
+                  <td>Mostrar controles multimedia (pausar, cambiar pista, carátula) en la barra de notificaciones y pantalla de bloqueo (Android 13+).</td>
+                </tr>
+                <tr>
+                  <td><code>RECORD_AUDIO</code> &amp; <code>FOREGROUND_SERVICE_MICROPHONE</code> (Opcional)</td>
+                  <td>Se utiliza <strong>únicamente en tiempo real</strong> cuando el usuario pulsa el botón del Reconocedor de Música (<em>Music Recognizer</em>). El audio se procesa en memoria volátil para generar la firma acústica y <strong>nunca se almacena ni se graba en el dispositivo</strong>.</td>
+                </tr>
+                <tr>
+                  <td><code>SCHEDULE_EXACT_ALARM</code></td>
+                  <td>Utilizado exclusivamente para la función de Alarma Musical / Despertador programada por el usuario.</td>
                 </tr>
                 <tr>
                   <td><code>READ_MEDIA_AUDIO</code> / <code>READ_EXTERNAL_STORAGE</code> (Opcional)</td>
-                  <td>Únicamente se solicita si el usuario desea reproducir archivos de música locales almacenados en el almacenamiento del teléfono.</td>
+                  <td>Solicitado únicamente si el usuario desea reproducir archivos de audio locales almacenados en el teléfono.</td>
                 </tr>
                 <tr>
                   <td><code>WAKE_LOCK</code></td>
-                  <td>Evita que el procesador entre en suspensión profunda mientras se decodifica y reproduce una pista de audio.</td>
+                  <td>Evita que el procesador entre en suspensión profunda mientras se reproduce una pista de audio.</td>
                 </tr>
               </tbody>
             </table>
@@ -159,69 +163,48 @@ const lastUpdated = {
         </section>
 
         <section class="policy-section">
-          <h2>5. Servicios de Terceros y APIs</h2>
-          <p>
-            Al utilizar Rediplays para buscar y reproducir música, la aplicación realiza solicitudes directas a los puntos de enlace públicos de YouTube y Google.
-          </p>
-          <p>
-            Dichas solicitudes están sujetas a los Términos de Servicio y a la Política de Privacidad de Google. Te recomendamos consultar sus políticas oficiales en:
-          </p>
-          <p>
-            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="link-external">
-              Política de Privacidad de Google (https://policies.google.com/privacy)
-              <span class="icon">open_in_new</span>
-            </a>
-          </p>
-        </section>
-
-        <section class="policy-section">
-          <h2>6. Seguridad y Retención de la Información</h2>
-          <p>
-            Todas las comunicaciones de red hacia los servicios de audio se realizan mediante protocolos seguros y cifrados <strong>HTTPS (TLS/SSL)</strong>.
-          </p>
-          <p>
-            Los datos locales se mantienen en el almacenamiento protegido de la aplicación provisto por el sistema operativo Android, impidiendo el acceso de otras aplicaciones no autorizadas.
-          </p>
-        </section>
-
-        <section class="policy-section">
-          <h2>7. Derechos del Usuario y Eliminación de Datos</h2>
-          <p>
-            Tienes el control total sobre tus datos en cualquier momento:
-          </p>
+          <h2>5. Servicios de Terceros y Publicidad</h2>
           <ul>
-            <li><strong>Borrado de caché e historial:</strong> Puedes limpiar la caché de audio y el historial de búsqueda directamente desde el menú de Ajustes dentro de la aplicación.</li>
-            <li><strong>Cierre de sesión:</strong> Si vinculaste tu cuenta, puedes desconectarla en cualquier momento, lo cual eliminará instantáneamente cualquier token de sesión guardado.</li>
-            <li><strong>Eliminación completa:</strong> Al desinstalar la aplicación de tu dispositivo Android o borrar los datos desde <em>Ajustes del Sistema &gt; Aplicaciones &gt; Rediplays &gt; Almacenamiento &gt; Borrar datos</em>, se eliminarán de forma irreversible e inmediata el 100% de los datos locales asociados.</li>
+            <li>
+              <strong>Google Mobile Ads (AdMob):</strong> La aplicación puede mostrar anuncios publicitarios o de recompensa proporcionados por Google AdMob. AdMob puede utilizar identificadores de publicidad del dispositivo (<code>Advertising ID</code>) para servir anuncios de acuerdo con las políticas de Google. Consulta la 
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="link-external">
+                Política de Privacidad de Google
+                <span class="icon">open_in_new</span>
+              </a>.
+            </li>
+            <li>
+              <strong>Servicios de Streaming y Metadatos:</strong> Las solicitudes de reproducción y búsqueda se comunican directamente y de forma cifrada (HTTPS) con los proveedores públicos de contenido correspondientes.
+            </li>
           </ul>
         </section>
 
         <section class="policy-section">
-          <h2>8. Privacidad de Menores</h2>
+          <h2>6. Derechos del Usuario y Eliminación de Datos</h2>
+          <ul>
+            <li><strong>Borrado de caché e historial:</strong> Puedes limpiar la caché y el historial de búsqueda en cualquier momento desde el menú de Ajustes dentro de la app.</li>
+            <li><strong>Eliminación total e irreversible:</strong> Al desinstalar la aplicación o limpiar los datos desde <em>Ajustes del Sistema &gt; Aplicaciones &gt; Rediplays &gt; Borrar datos</em>, se elimina el 100% de la información local de forma inmediata.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>7. Privacidad de Menores</h2>
           <p>
-            Rediplays no está dirigida deliberadamente a menores de 13 años (o la edad mínima legal en tu jurisdicción). No recopilamos conscientemente información personal de niños. Si eres padre o tutor y tienes inquietudes sobre el uso de la app por parte de un menor, puedes contactarnos.
+            Rediplays no está dirigida deliberadamente a menores de 13 años. No recopilamos conscientemente ningún tipo de información personal de menores.
           </p>
         </section>
 
         <section class="policy-section">
-          <h2>9. Modificaciones a esta Política</h2>
+          <h2>8. Contacto y Soporte</h2>
           <p>
-            Podemos actualizar esta Política de Privacidad periódicamente para reflejar cambios en la aplicación, nuevas características o requerimientos regulatorios de Google Play Console. Cualquier cambio sustancial será publicado en esta página con la fecha de revisión actualizada.
-          </p>
-        </section>
-
-        <section class="policy-section">
-          <h2>10. Contacto y Soporte</h2>
-          <p>
-            Si tienes dudas, sugerencias o comentarios acerca de esta Política de Privacidad o las prácticas de seguridad de Rediplays, puedes abrir una consulta o reporte en nuestro repositorio oficial:
+            Si tienes dudas o consultas sobre esta Política de Privacidad, puedes contactarnos a través de:
           </p>
           <div class="contact-card">
             <span class="icon">code</span>
             <div>
-              <strong>Repositorio y Soporte Comunitario:</strong>
+              <strong>Repositorio Oficial:</strong>
               <p>
-                <a href="https://github.com/MetrolistGroup/Metrolist/issues" target="_blank" rel="noopener noreferrer">
-                  GitHub Issues - Rediplays Project
+                <a href="https://github.com/Hernandez723/rediplaysapp" target="_blank" rel="noopener noreferrer">
+                  GitHub - Rediplays Project (Hernandez723/rediplaysapp)
                 </a>
               </p>
             </div>
@@ -234,72 +217,76 @@ const lastUpdated = {
         <section class="policy-section">
           <h2>1. Overview &amp; Scope</h2>
           <p>
-            <strong>Rediplays</strong> is an open-source media client application for Android devices designed to enable users to browse, search, and stream audio and music content.
+            <strong>Rediplays</strong> is a media client application for Android devices designed to browse, search, and stream audio, podcast, and music content from public online sources and local storage.
           </p>
           <p>
-            This Privacy Policy applies to all users who install and use the Rediplays mobile application as well as visitors to this website. By using the application, you agree to the terms described herein.
+            This Privacy Policy applies to all users of the Rediplays mobile application and visitors to this website.
           </p>
         </section>
 
         <section class="policy-section">
           <h2>2. Information We DO NOT Collect</h2>
           <p>
-            Our core architecture is built around user privacy and data minimization. We (the Rediplays developers):
+            Our core architecture is built around user privacy and data minimization:
           </p>
           <ul>
-            <li><strong>Do not collect personally identifiable information (PII):</strong> We never ask for your name, phone number, physical address, or national ID.</li>
-            <li><strong>Do not sell or monetize personal data:</strong> We do not sell, rent, or trade your data with advertising networks or data brokers.</li>
-            <li><strong>Do not operate telemetry or tracking servers:</strong> We do not log your search queries or playback history on private remote servers.</li>
+            <li><strong>No personal data collection:</strong> We do not request your name, email, phone number, or physical address.</li>
+            <li><strong>No tracking of personal listening habits:</strong> We do not store or log listening history on remote proprietary servers.</li>
+            <li><strong>No data selling:</strong> No user data is sold, rented, or shared with third parties under any circumstances.</li>
           </ul>
         </section>
 
         <section class="policy-section">
-          <h2>3. Data Processed Locally on Your Device</h2>
+          <h2>3. Data Processed Locally on the Device</h2>
           <p>
-            To deliver smooth audio playback and user interface functionality, Rediplays stores certain data strictly within your device's isolated application sandbox:
+            To deliver an optimal experience, Rediplays stores certain data strictly within your device's isolated application sandbox:
           </p>
           <ul>
-            <li><strong>Audio and image cache:</strong> Artwork thumbnails and audio buffer chunks to speed up loading and reduce bandwidth consumption.</li>
-            <li><strong>Local playlists and favorites:</strong> Playlists created locally by you inside the application.</li>
-            <li><strong>Local search &amp; playback history:</strong> Stored on-device to allow resuming songs and quick search completions.</li>
-            <li><strong>Preferences &amp; settings:</strong> Theme selections, audio equalizer presets, streaming audio quality preferences, and language.</li>
-            <li><strong>Account authentication (Optional):</strong> If you choose to log in with your YouTube Music account, auth tokens/cookies are stored securely and encrypted on your device and sent only directly to official Google endpoints.</li>
+            <li><strong>Audio and image cache:</strong> Cover artwork and temporary audio buffers for smooth, uninterrupted playback.</li>
+            <li><strong>Playlists and favorites:</strong> User-curated playlists created within the app.</li>
+            <li><strong>Search and playback history:</strong> Stored locally to allow easy navigation and resuming songs.</li>
+            <li><strong>Preferences &amp; settings:</strong> UI theme, audio equalizer presets, and language choices.</li>
           </ul>
         </section>
 
         <section class="policy-section">
           <h2>4. Android Permissions &amp; Technical Justification</h2>
-          <p>
-            In accordance with Google Play Developer Policy requirements, the following table details the device permissions requested by Rediplays and their technical justification:
-          </p>
           <div class="permissions-table-wrap">
             <table class="permissions-table">
               <thead>
                 <tr>
                   <th>Permission</th>
-                  <th>Technical Justification / Purpose</th>
+                  <th>Purpose / Technical Justification</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
-                  <td>Required to communicate with streaming servers, fetch cover art, search songs, and check if network connectivity is active (Wi-Fi vs Cellular).</td>
+                  <td>Connecting to streaming servers to stream content, download album artwork, and verify active network status (Wi-Fi or cellular).</td>
                 </tr>
                 <tr>
                   <td><code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
-                  <td>Required by Android to maintain continuous music playback in the background and when the screen is locked/turned off.</td>
+                  <td>Required by Android to maintain continuous audio playback in the background and with the screen locked/off.</td>
                 </tr>
                 <tr>
                   <td><code>POST_NOTIFICATIONS</code></td>
-                  <td>Enables media player controls (play, pause, next, previous, artwork) inside the notification shade and lock screen (Android 13+).</td>
+                  <td>Displays playback controls (play, pause, skip, album art) in the notification bar and lock screen (Android 13+).</td>
+                </tr>
+                <tr>
+                  <td><code>RECORD_AUDIO</code> &amp; <code>FOREGROUND_SERVICE_MICROPHONE</code> (Optional)</td>
+                  <td>Used <strong>strictly in real-time</strong> when the user taps the Music Recognizer button. Audio is processed solely in volatile memory to generate an acoustic fingerprint and is <strong>never recorded or stored on the device</strong>.</td>
+                </tr>
+                <tr>
+                  <td><code>SCHEDULE_EXACT_ALARM</code></td>
+                  <td>Used exclusively for the user-scheduled Music Alarm / Clock feature.</td>
                 </tr>
                 <tr>
                   <td><code>READ_MEDIA_AUDIO</code> / <code>READ_EXTERNAL_STORAGE</code> (Optional)</td>
-                  <td>Requested solely if the user chooses to browse and play local offline music files stored on device storage.</td>
+                  <td>Requested solely if the user chooses to browse and play local offline audio files on device storage.</td>
                 </tr>
                 <tr>
                   <td><code>WAKE_LOCK</code></td>
-                  <td>Prevents CPU sleep while actively decoding and streaming audio content.</td>
+                  <td>Prevents the processor from entering deep sleep while decoding and playing audio tracks.</td>
                 </tr>
               </tbody>
             </table>
@@ -307,69 +294,48 @@ const lastUpdated = {
         </section>
 
         <section class="policy-section">
-          <h2>5. Third-Party Services &amp; APIs</h2>
-          <p>
-            When searching or streaming media through Rediplays, network requests are routed directly to public Google / YouTube endpoints.
-          </p>
-          <p>
-            Those interactions are governed by Google's Privacy Policy. You can review their privacy practices at:
-          </p>
-          <p>
-            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="link-external">
-              Google Privacy Policy (https://policies.google.com/privacy)
-              <span class="icon">open_in_new</span>
-            </a>
-          </p>
-        </section>
-
-        <section class="policy-section">
-          <h2>6. Data Security &amp; Encryption</h2>
-          <p>
-            All network transmissions for metadata, streams, and API interactions use industry-standard <strong>HTTPS (TLS/SSL) encryption</strong> in transit.
-          </p>
-          <p>
-            Local application state is stored inside the Android private sandbox, isolating it from unauthorized third-party apps.
-          </p>
-        </section>
-
-        <section class="policy-section">
-          <h2>7. User Control &amp; Data Deletion Rights</h2>
-          <p>
-            You have full autonomy over your data at any time:
-          </p>
+          <h2>5. Third-Party Services &amp; Advertising</h2>
           <ul>
-            <li><strong>Clear Cache and History:</strong> You can purge your audio cache, search history, and saved data from inside the App Settings menu.</li>
-            <li><strong>Account Sign-Out:</strong> If logged in, signing out immediately wipes all stored session tokens and authentication cookies from your device.</li>
-            <li><strong>Complete Permanent Deletion:</strong> Uninstalling the app or wiping app storage via <em>Android Settings &gt; Apps &gt; Rediplays &gt; Storage &gt; Clear Storage</em> permanently deletes 100% of locally stored data.</li>
+            <li>
+              <strong>Google Mobile Ads (AdMob):</strong> The app may display banner, interstitial, or rewarded ads provided by Google AdMob. AdMob may utilize device advertising identifiers (<code>Advertising ID</code>) in accordance with Google's policies. See the 
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="link-external">
+                Google Privacy Policy
+                <span class="icon">open_in_new</span>
+              </a>.
+            </li>
+            <li>
+              <strong>Streaming &amp; Metadata Services:</strong> Playback and search requests communicate directly and securely (HTTPS) with respective public content servers.
+            </li>
           </ul>
         </section>
 
         <section class="policy-section">
-          <h2>8. Children's Privacy</h2>
+          <h2>6. User Rights &amp; Data Deletion</h2>
+          <ul>
+            <li><strong>Clear Cache &amp; History:</strong> You can purge your audio cache and search history at any time from the app Settings menu.</li>
+            <li><strong>Permanent Deletion:</strong> Uninstalling the application or clearing data via <em>Android Settings &gt; Apps &gt; Rediplays &gt; Clear Storage</em> immediately and irreversibly erases 100% of locally stored app data.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>7. Children's Privacy</h2>
           <p>
-            Rediplays is not directed at children under the age of 13 (or under the minimum age specified by applicable laws in your jurisdiction). We do not knowingly collect or solicit personal information from children.
+            Rediplays is not directed at children under the age of 13. We do not knowingly collect or solicit personal information from children.
           </p>
         </section>
 
         <section class="policy-section">
-          <h2>9. Changes to this Policy</h2>
+          <h2>8. Contact &amp; Support</h2>
           <p>
-            We may revise this Privacy Policy periodically to accommodate updates to the application or changes in regulatory standards. Any revisions will be published on this page with an updated modification date.
-          </p>
-        </section>
-
-        <section class="policy-section">
-          <h2>10. Contact &amp; Support</h2>
-          <p>
-            If you have questions, inquiries, or feedback regarding this Privacy Policy or Rediplays data practices, please reach out through our official repository:
+            If you have questions or inquiries regarding this Privacy Policy, feel free to contact us via:
           </p>
           <div class="contact-card">
             <span class="icon">code</span>
             <div>
-              <strong>Community Repository &amp; Issue Tracker:</strong>
+              <strong>Official Repository:</strong>
               <p>
-                <a href="https://github.com/MetrolistGroup/Metrolist/issues" target="_blank" rel="noopener noreferrer">
-                  GitHub Issues - Rediplays Project
+                <a href="https://github.com/Hernandez723/rediplaysapp" target="_blank" rel="noopener noreferrer">
+                  GitHub - Rediplays Project (Hernandez723/rediplaysapp)
                 </a>
               </p>
             </div>
@@ -450,7 +416,7 @@ const lastUpdated = {
 .privacy-page__title {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
   letter-spacing: -0.03em;
   margin-bottom: 14px;
   color: var(--md-on-background);
