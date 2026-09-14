@@ -7,105 +7,104 @@ export type FaqItem = {
 export const FAQ_DATA = {
   es: [
     {
-      question: '¿Es seguro usar Rediplays?',
+      question: '1. ¿Es Rediplays una app de código abierto?',
       answer:
         'Sí, absolutamente. Rediplays es un proyecto de código abierto bajo licencia GPL-3.0. El código fuente es público, transparente y auditable por cualquier usuario o desarrollador en GitHub.',
-      category: 'Seguridad'
+      category: 'Código Abierto'
     },
     {
-      question: '¿Cómo funciona el Reconocedor de Música con el Micrófono?',
+      question: '2. ¿Cómo funciona el reconocimiento musical y qué pasa con el audio?',
       answer:
         'Cuando presionas el botón de reconocimiento, la app escucha únicamente unos segundos en tiempo real. El audio se procesa en la memoria volátil del dispositivo para generar la huella acústica y buscar la canción. El audio nunca se graba, no se guarda en el teléfono y nunca se envía a servidores privados.',
       category: 'Funciones'
     },
     {
-      question: '¿Cómo funciona la Alarma Musical / Despertador?',
+      question: '3. ¿Cómo funciona la alarma musical?',
       answer:
         'Puedes programar alarmas para despertar con tus canciones o playlists favoritas. La app utiliza el permiso de alarmas exactas de Android (SCHEDULE_EXACT_ALARM) para garantizar que la música empiece a sonar puntualmente a la hora fijada, incluso con la pantalla apagada.',
       category: 'Funciones'
     },
     {
-      question: '¿Puedo iniciar sesión con mi cuenta de Google / YouTube Music?',
+      question: '4. ¿Puedo sincronizar mi cuenta y listas de reproducción?',
       answer:
-        'Sí. Rediplays permite iniciar sesión de forma opcional para sincronizar tus listas de reproducción, suscripciones y biblioteca personal directamente con los servidores de YouTube Music.',
-      category: 'Cuentas'
+        'Sí. Rediplays permite iniciar sesión de forma opcional para sincronizar tus listas de reproducción, suscripciones y biblioteca personal en la nube directamente con los servidores del servicio de forma cifrada y segura.',
+      category: 'Sincronización'
     },
     {
-      question: '¿Mis datos, listas y favoritos se guardan en servidores externos?',
+      question: '5. ¿Mis listas locales o historial se suben a algún servidor?',
       answer:
         'No. Todas tus listas de reproducción locales, favoritos, descargas e historial de reproducción se almacenan exclusivamente de forma local en la memoria protegida (sandbox) de tu dispositivo.',
       category: 'Privacidad'
     },
     {
-      question: '¿Cómo se actualiza la aplicación?',
+      question: '6. ¿Cómo se actualiza la aplicación?',
       answer:
-        'Puedes actualizarla utilizando el actualizador integrado dentro de la app o descargando la versión más reciente del archivo APK directamente desde la sección de Releases en nuestro repositorio oficial de GitHub.',
+        '• Usuarios de Google Play Store: La aplicación se actualizará de forma automática y segura a través de Google Play Store.\n• Usuarios de versiones independientes / GitHub: Puedes obtener las versiones más recientes directamente desde la sección de Releases en nuestro repositorio oficial de GitHub.',
       category: 'Actualizaciones'
     },
     {
-      question: '¿Existe una versión para iOS o PC (Escritorio)?',
+      question: '7. ¿Está disponible para PC o escritorio?',
       answer:
-        'Actualmente Rediplays está optimizada exclusivamente para Android. Para escritorio puedes utilizar YouTube Music en tu navegador o clientes alternativos de la comunidad.',
+        'Actualmente Rediplays está optimizada exclusivamente para dispositivos Android. Para escuchar en ordenadores o escritorio puedes utilizar cualquier navegador web moderno.',
       category: 'Plataformas'
     },
     {
-      question: '¿Cómo puedo reportar un error o solicitar una nueva función?',
+      question: '8. ¿Cómo puedo reportar un error o sugerir una función?',
       answer:
-        'Puedes abrir un reporte de error (Issue) o proponer una idea en la pestaña de Issues de nuestro repositorio de GitHub en github.com/Hernandez723/rediplaysapp.',
+        'Puedes abrir un reporte de error (Issue) o proponer una idea directamente en la pestaña de Issues de nuestro repositorio oficial de GitHub: github.com/Hernandez723/rediplaysapp.',
       category: 'Soporte'
     }
   ],
   en: [
     {
-      question: 'Is Rediplays safe to use?',
+      question: '1. Is Rediplays an open-source application?',
       answer:
-        'Yes, absolutely. Rediplays is open-source under the GPL-3.0 license. The source code is publicly auditable and transparent on GitHub.',
-      category: 'Security'
+        'Yes, absolutely. Rediplays is an open-source project licensed under GPL-3.0. The source code is public, transparent, and auditable by anyone on GitHub.',
+      category: 'Open Source'
     },
     {
-      question: 'How does the Music Recognizer with Microphone work?',
+      question: '2. How does music recognition work and what happens with audio?',
       answer:
-        'When you tap the recognizer button, the app listens in real time for a few seconds. The audio is processed entirely in volatile memory to calculate the acoustic fingerprint. Audio is never saved, recorded to disk, or sent to private servers.',
+        'When tapping the recognition button, the app listens strictly in real time for a few seconds. Audio is processed solely in volatile memory to compute the acoustic signature. Audio is never saved, recorded to disk, or transmitted to private servers.',
       category: 'Features'
     },
     {
-      question: 'How does the Music Alarm / Clock work?',
+      question: '3. How does the music alarm work?',
       answer:
-        'You can set alarms to wake up with your favorite tracks or playlists. The app uses Android exact alarms (SCHEDULE_EXACT_ALARM) to guarantee that music starts on time, even if your phone screen is turned off.',
+        'You can set alarms to wake up with your favorite tracks or playlists. The app uses Android exact alarms (SCHEDULE_EXACT_ALARM) to ensure music plays right on time, even when the screen is turned off.',
       category: 'Features'
     },
     {
-      question: 'Can I log in with my Google / YouTube Music account?',
+      question: '4. Can I sync my account and playlists?',
       answer:
-        'Yes. Rediplays supports optional login to sync your personal playlists, library, and subscriptions directly with YouTube Music servers.',
-      category: 'Accounts'
+        'Yes. Rediplays allows optional login to synchronize your playlists, subscriptions, and personal cloud library directly with service endpoints over encrypted HTTPS connections.',
+      category: 'Sync'
     },
     {
-      question: 'Are my playlists and favorites stored on remote servers?',
+      question: '5. Are my local playlists or history uploaded to remote servers?',
       answer:
-        'No. All local playlists, favorites, downloads, and playback history are stored strictly within the private sandbox memory of your Android device.',
+        'No. All local playlists, favorites, downloads, and playback history remain exclusively stored within your device isolated sandbox storage.',
       category: 'Privacy'
     },
     {
-      question: 'How do I update the application?',
+      question: '6. How does the app update?',
       answer:
-        'You can update via the built-in in-app updater or by downloading the latest APK release directly from the GitHub Releases page.',
+        '• Google Play Store users: The app will update automatically and securely through the Google Play Store.\n• Independent / GitHub users: You can grab the latest releases directly from the Releases tab on our official GitHub repository.',
       category: 'Updates'
     },
     {
-      question: 'Is there an iOS or Desktop version?',
+      question: '7. Is there a PC or Desktop version available?',
       answer:
-        'Currently Rediplays is exclusively built for Android. For desktop, you can use YouTube Music in your browser or community desktop wrappers.',
+        'Currently Rediplays is exclusively optimized for Android devices. To listen on PC or desktop, you can use any modern web browser.',
       category: 'Platforms'
     },
     {
-      question: 'How can I report a bug or request a feature?',
+      question: '8. How can I report a bug or suggest a new feature?',
       answer:
-        'You can open an issue or feature request on our official GitHub repository at github.com/Hernandez723/rediplaysapp.',
+        'You can open an issue or submit suggestions directly on the Issues tab of our official GitHub repository: github.com/Hernandez723/rediplaysapp.',
       category: 'Support'
     }
   ]
 }
 
-// Backward compatibility export for components importing FAQ_ITEMS
 export const FAQ_ITEMS = FAQ_DATA.en

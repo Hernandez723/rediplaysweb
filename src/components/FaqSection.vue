@@ -178,6 +178,7 @@ const topItems = computed(() => (FAQ_DATA[currentLang.value] || FAQ_DATA.es).sli
   line-height: 1.75;
   font-size: 0.9375rem;
   max-width: 76ch;
+  white-space: pre-line;
 }
 
 .faq__cta {

@@ -378,6 +378,7 @@ const filteredItems = computed(() => {
   line-height: 1.8;
   font-size: 0.9375rem;
   max-width: 80ch;
+  white-space: pre-line;
 }
 
 .faq-empty {
