@@ -8,27 +8,27 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    icon: 'block',
-    title: 'No ads. Ever.',
-    body: 'Stream without interruption. No video ads, no audio ads, no mid-roll breaks. Just the music.',
+    icon: 'bolt',
+    title: 'Experiencia fluida y limpia.',
+    body: 'Transmisión rápida y sin interrupciones innecesarias. Diseñado para disfrutar solo de la música.',
     variant: 'primary',
   },
   {
     icon: 'headphones',
-    title: 'Play it, pocket it.',
-    body: "Keeps playing when you lock your screen or switch apps. Background playback without paywalls.",
+    title: 'Reproduce y guarda en el bolsillo.',
+    body: 'La música continúa sonando al bloquear la pantalla o cambiar de aplicación con reproducción en segundo plano.',
     variant: 'secondary',
   },
   {
     icon: 'groups',
-    title: 'Listen together.',
-    body: 'Sync playback with anyone on Rediplays - any network, any country. High performance, minimal latency, open source. Like Spotify Jam, but yours.',
+    title: 'Escucha en grupo (Listen Together).',
+    body: 'Sincroniza la reproducción en tiempo real con amigos en cualquier red o país. Alto rendimiento, mínima latencia y 100% código abierto.',
     variant: 'tertiary',
   },
   {
     icon: 'cloud_download',
-    title: 'No signal, no problem.',
-    body: 'Cache songs and playlists for offline listening. Your library travels with you wherever you go.',
+    title: '¿Sin conexión? No hay problema.',
+    body: 'Guarda tus canciones y listas favoritas en la memoria para escuchar sin conexión en cualquier momento.',
     variant: 'primary',
   },
 ]
@@ -39,8 +39,8 @@ const features: Feature[] = [
     <div class="container">
 
       <header class="highlights__header">
-        <h2 class="highlights__title">Built differently.</h2>
-        <p class="highlights__sub">Everything you would want. Nothing you wouldn't.</p>
+        <h2 class="highlights__title">Diseñado para la música.</h2>
+        <p class="highlights__sub">Todo lo que necesitas, sin complicaciones.</p>
       </header>
 
       <div class="highlights__grid">
