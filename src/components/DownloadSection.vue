@@ -11,10 +11,15 @@
         </div>
 
         <div class="download__actions">
-          <div class="btn btn-filled btn-lg download__btn-soon">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.rediplays.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-filled btn-lg"
+          >
             <span class="icon" aria-hidden="true">android</span>
-            Próximamente
-          </div>
+            Descargar en Google Play
+          </a>
           <RouterLink to="/faq" class="download__faq-link">
             Preguntas Frecuentes
             <span class="icon" style="font-size: 1rem" aria-hidden="true">arrow_forward</span>

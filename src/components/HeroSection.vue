@@ -338,10 +338,15 @@ onBeforeUnmount(() => {
         </p>
 
         <div class="hero__actions">
-          <button class="btn btn-filled btn-lg hero__btn-soon" type="button" disabled>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.rediplays.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-filled btn-lg"
+          >
             <span class="icon" aria-hidden="true">android</span>
-            Próximamente
-          </button>
+            Descargar en Google Play
+          </a>
           <RouterLink to="/faq" class="btn btn-outlined btn-lg">
             <span class="icon" aria-hidden="true">help</span>
             Más información

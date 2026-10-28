@@ -139,13 +139,13 @@ onMounted(async () => {
           </a>
 
           <a
-            href="https://github.com/Hernandez723/rediplaysapp/releases"
+            href="https://play.google.com/store/apps/details?id=com.rediplays.app"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-tonal btn-lg watch__btn-secondary"
           >
             <span class="icon" aria-hidden="true">download</span>
-            <span>Descargar Rediplays</span>
+            <span>Descargar en Google Play</span>
           </a>
 
           <a

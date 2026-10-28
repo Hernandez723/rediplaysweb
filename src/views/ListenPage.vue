@@ -98,12 +98,17 @@ async function copyCode() {
           </div>
           <h2 class="listen__card-title">¿Aún no tienes la app?</h2>
           <p class="listen__card-body">
-            Rediplays estará disponible muy pronto para dispositivos Android en Google Play Store.
+            Descarga Rediplays gratis para dispositivos Android desde Google Play Store.
           </p>
-          <div class="btn btn-filled btn-lg" style="cursor: default; opacity: 0.95; pointer-events: none;">
-            <span class="icon" aria-hidden="true">schedule</span>
-            Próximamente
-          </div>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.rediplays.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-filled btn-lg listen__cta"
+          >
+            <span class="icon" aria-hidden="true">download</span>
+            Descargar en Google Play
+          </a>
         </article>
       </div>
 
